@@ -143,7 +143,12 @@ picture {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_background.jpg);
+  background: linear-gradient(
+      0deg,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/img_background.jpg);
 }
 .background-container .button__container {
   display: flex;
@@ -228,7 +233,7 @@ picture {
   flex-basis: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .services__figure .services__figcaption {
   text-align: center;
@@ -293,10 +298,11 @@ picture {
 }
 
 .charge-item {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   -webkit-animation: tarjeta1Out 2.5s cubic-bezier(0.4, 0, 0.2, 1);
-          animation: tarjeta1Out 2.5s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: tarjeta1Out 2.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .charge-item .charge__name {
   font-weight: 500;
@@ -1103,7 +1109,9 @@ picture {
   border-radius: 2px;
 }
 
-.custom-checkmark-label input[type=checkbox]:checked + .custom-checkmark:hover {
+.custom-checkmark-label
+  input[type="checkbox"]:checked
+  + .custom-checkmark:hover {
   background: #2196f3;
   border: none;
 }
@@ -1115,7 +1123,10 @@ picture {
   fill: #ffffff;
 }
 
-.custom-checkmark-label input[type=checkbox]:checked + .custom-checkmark .custom-checkmark-icon {
+.custom-checkmark-label
+  input[type="checkbox"]:checked
+  + .custom-checkmark
+  .custom-checkmark-icon {
   display: inline;
 }
 
@@ -1273,4 +1284,4 @@ picture {
   display: flex;
   flex-direction: column;
   align-items: center;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

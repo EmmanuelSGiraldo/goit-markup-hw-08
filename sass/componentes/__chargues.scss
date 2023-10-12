@@ -24,12 +24,12 @@
     gap: 30px;
   }
 }
-  .charge-item {
-   box-shadow: $box-shadow-2;
-   border-radius: 0px 0px 4px 4px;
-   animation: tarjeta1Out 2.5s cubic-bezier(0.4, 0, 0.2, 1);
-   width: 100%;
-   max-width: 480px;
+.charge-item {
+  box-shadow: $box-shadow-2;
+  border-radius: 0px 0px 4px 4px;
+  animation: tarjeta1Out 2.5s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  max-width: 480px;
 
   .charges__name {
     font-weight: 500;

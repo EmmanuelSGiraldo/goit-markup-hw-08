@@ -10,7 +10,7 @@
     font-weight: 700;
     font-size: 26px;
     color: $accent-color;
-    width: 25%
+    width: 25%;
   }
 }
 .header-container {
@@ -84,11 +84,10 @@
   .redes-sociales-navbar {
     display: none;
   }
-  .info-contact{
+  .info-contact {
     display: flex;
     flex-direction: row;
     gap: 20px;
-   
   }
   .nav__contact-info:hover,
   .nav__contact-info:hover .icons-email,
@@ -121,7 +120,7 @@
     justify-content: flex-end;
     gap: 50px;
   }
-  .nav__contact{
+  .nav__contact {
     flex-direction: column;
   }
 
@@ -135,10 +134,9 @@
     align-items: flex-end;
     width: 40%;
   }
-  .navbar .info-contact{
+  .navbar .info-contact {
     flex-direction: column;
   }
-  
 }
 
 @media screen and (max-width: 480.98px) {
@@ -205,7 +203,6 @@
   .navbar .nav__contact {
     @include d-flex(flex-start, null, column);
     width: 100%;
-    
   }
 
   .navbar .navbar__menu-link {
@@ -218,7 +215,6 @@
   .navbar__menu-link--estudio:after {
     visibility: hidden;
   }
-
 
   .navbar .nav__contact-info {
     font-weight: 500;
@@ -236,10 +232,10 @@
     letter-spacing: 0.02em;
     color: $accent-color;
   }
-  .icons-email{
+  .icons-email {
     display: none;
   }
-  .icons-telefono{
+  .icons-telefono {
     display: none;
   }
 }
