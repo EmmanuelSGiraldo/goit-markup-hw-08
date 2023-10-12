@@ -1,57 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@;400;500;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import './utils/vars';
+@import './all/reset';
+@import './all/com';
+@import './utils/hidden';
+@import './utils/mixins';
 
+@import './components/container';
+@import './components/button';
 
+@import './layouts/header';
+@import './layouts/.hero';
 
-@import "utils/_variables";
-@import"utils/_mixin";
+@import './components/section';
 
+@import './layouts/features';
+@import './layouts/directions';
+@import './layouts/team';
+@import './layouts/clients';
+@import './layouts/portfolio';
+@import './layouts/footer';
 
-@import "componentes/_header";
-@import "componentes/_background";
-@import "componentes/_services";
-@import "componentes/_details";
-@import "componentes/_chargues";
-@import "componentes/_customer";
-@import "componentes/_footer";
-@import "componentes/_modal";
-@import "componentes/_icons";
-@import "componentes/_portafolio";
-
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto";
-}
-
-/* quitar la decoracion de los enlaces*/
-a {
-  text-decoration: none;
-}
-
-/* quitar la decoracion de las listas */
-ul {
-  list-style: none;
-}
-
-img,
-picture {
-  width: 100%;
-}
-
-.container {
-  margin-inline: auto;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-
-
-
-
+@import './components/modal';
