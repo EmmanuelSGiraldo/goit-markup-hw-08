@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portafolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+        <link rel="stylesheet" href="./css/main.min.css">
+    </head>
+<body>
+    <header class="header header--portfolio">
+        <div class="container header__container">
+            <a href="/" class="logo header__logo">
+                <span class="logo__accent">Web</span>Studio</a>
+            <nav class="nav header__nav">
+                <ul class="menu list">
+                    <li class="menu__item">
+                        <a href="./index.html" class="menu__link">Estudio</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./portfolio.html" class="menu__link current">Portafolio</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Contactos</a>
+                    </li>
+                </ul>
+            </nav> 
+            <ul class="header-contacts list">
+                <li class="header-contacts__item">
+                    <a href="mailto:info@devstudio.com" class="header-contacts__link">
+                        <svg class="header-contacts__icon envelope" width="14" height="10">
+                            <use href='./images/symbol-defs.svg#envelope'></use>
+                        </svg>
+                    info@devstudio.com</a>
+                </li>
+                <li class="header-contacts__item">
+                    <a href="tel:+380961111111" class="header-contacts__link">
+                        <svg class="header-contacts__icon smartphone" width="10" height="14">
+                            <use href='./images/symbol-defs.svg#smartphone'></use>
+                        </svg>
+                    +38 096 111 11 11</a>
+                </li>
+            </ul>
+            <button type="button" class="menu-open" data-menu-open>
+                <svg class="menu-open-icon" width="24" height="16">
+                    <use href="./images/symbol-defs.svg#mob-menu-close"></use>
+                </svg>
+            </button>
+        </div> 
+
+           <!-- MOB-MENU -->
+
+            <div class="mob-menu is-hidden" data-menu>
+                <div class="mob-menu__container">
+
+                <div class="mob-menu-top">
+                    <button type="button" class="menu-close" data-menu-close>
+                        <svg class="menu-close-icon" >
+                            <use href="./images/symbol-defs.svg#close-black"></use>
+                        </svg>
+                    </button>
+                    <ul class="mob-menu__list list">
+                        <li class="mob-menu__item">
+                            <a href="./index.html" class="mob-menu__link">Estudio</a>
+                        </li>
+                        <li class="mob-menu__item">
+                            <a href="./portfolio.html" class="mob-menu__link">Portafolio</a>
+                        </li>
+                        <li class="mob-menu__item">
+                            <a href="" class="mob-menu__link">Contactos</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mob-menu-bottom">
+                    <ul class="mob-menu-contacts list">
+                            <li class="mob-menu-contacts__item">
+                                <a href="tel:+380961111111" class="mob-menu-contacts__tel">
+                                    +38 096 111 11 11</a>
+                            </li>
+                            <li class="mob-menu-contacts__item">
+                                <a href="mailto:info@devstudio.com" class="mob-menu-contacts__mail">
+                                    info@devstudio.com</a>
+                            </li>
+                    </ul>
+                    <ul class="mob-soc list">
+                            <li class="mob-soc__item">
+                                <a href="" class="mob-soc__link" aria-label="Enlace a Instagram">Instagram</a>
+                            </li>
+                            <li class="mob-soc__item">
+                                <a href="" class="mob-soc__link" aria-label="Enlace a Twitter">Twitter</a>
+                            </li>
+                            <li class="mob-soc__item">
+                                <a href="" class="mob-soc__link" aria-label="Enlace a Facebook">Facebook</a>
+                            </li>
+                            <li class="mob-soc__item">
+                                <a href="" class="mob-soc__link" aria-label="Enlace a LinkedIn">LinkedIn</a>
+                            </li>
+                    </ul>
+                </div>
+
+                </div>
+            </div>
+
+        
+    </header>
+    <main>
+        <section class="portfolio section">
+            <div class="container container__portfolio">
+                <h1 class="visually-hidden">Portafolio</h1>
+                <ul class="filter list">
+                    <li class="filter__item"><button type="button" class="button button--secondary">Todo</button></li>
+                    <li class="filter__item"><button type="button" class="button button--secondary">Sitios-web</button></li>
+                    <li class="filter__item"><button type="button" class="button button--secondary">Aplicaciones</button></li>
+                    <li class="filter__item"><button type="button" class="button button--secondary">Diseño</button></li>
+                    <li class="filter__item"><button type="button" class="button button--secondary">Marketing</button></li>
+                </ul>
+                <ul class="card-set list">
+                    <li class="card-set__item">
+                        <a href="" class="card-set__link">
+                            <div class="card-set__top-wrap">
+                                <picture>
+                                    <source srcset="./images/portfolio1.jpg 1x, ./images/portfolio1-2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio1-tab.jpg 1x, ./images/portfolio1-tab-2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio1-mob.jpg 1x, ./images/portfolio1-mob-2x.jpg 2x" media="(max-width: 767px)">
+                                    <img src="./images/portfolio1-mob.jpg" 
+                                        alt="maqueta" 
+                                        width="450">
+                                </picture>
+                                <p class="card-set__top-text">Tecnoduck es una plataforma de distribución de coronavirus de última generación. Las compañías usan esta plataforma para el espionaje digital y los ataques a los servidores seguros de la competencia.</p>
+                            </div>
+                            <div class="card-set__discription">
+                                <h2 class="card-set__title">Tecnoduck</h2>
+                                <p class="card-set__text">Sitio-web</p>
+                            </div>
+                        </a>
+                    </li>
+                    
+                    <li class="card-set__item">
+                        <a href="" class="card-set__link">
+                            <div class="card-set__top-wrap">
+                                <picture>
+                                    <source srcset="./images/portfolio2.jpg 1x, ./images/portfolio2-2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio2-tab.jpg 1x, ./images/portfolio2-tab-2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio2-mob.jpg 1x, ./images/portfolio2-mob-2x.jpg 2x" media="(max-width: 767px)">
+                                    <img src="./images/portfolio2-mob.jpg" 
+                                        alt="Jugadores NBA" 
+                                        width="450">
+                                </picture>
+                                <p class="card-set__top-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci deserunt, reprehenderit doloribus tempora sunt repudiandae et cumque reiciendis impedit. Iste assumenda dicta corporis velit numquam quibusdam veniam maxime neque at?</p>
+                            </div>
+                            <div class="card-set__discription">
+                                <h2 class="card-set__title">Póster de Nueva Orleans vs Estrella Dorada</h2>
+                                <p class="card-set__text">Diseño</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card-set__item">
+                        <a href="" class="card-set__link">
+                            <div class="card-set__top-wrap">
+                                <picture>
+                                    <source srcset="./images/portfolio3.jpg 1x, ./images/portfolio3-2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio3-tab.jpg 1x, ./images/portfolio3-tab-2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio3-mob.jpg 1x, ./images/portfolio3-mob-2x.jpg 2x" media="(max-width: 767px)">
+                                    <img src="./images/portfolio3-mob.jpg" 
+                                        alt="Logo restaurante" 
+                                        width="450">
+                                </picture>
+                                <p class="card-set__top-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, hic velit doloribus sequi omnis commodi asperiores minus animi aspernatur sint placeat incidunt, eum optio dolorum. Necessitatibus molestias nihil iste accusamus..</p>
+                            </div>
+                            <div class="card-set__discription">
+                                <h2 class="card-set__title">Restaurante de Mariscos</h2>
+                                <p class="card-set__text">Aplicaciones</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card-set__item">
+                        <a href="" class="card-set__link">
+                            <div class="card-set__top-wrap">
+                                <picture>
+                                    <source srcset="./images/portfolio4.jpg 1x, ./images/portfolio4-2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio4-tab.jpg 1x, ./images/portfolio4-tab-2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio4-mob.jpg 1x, ./images/portfolio4-mob-2x.jpg 2x" media="(max-width: 767px)">
+                                    <img src="./images/portfolio4-mob.jpg" 
+                                        alt="Audifonos" 
+                                        width="450">
+                                </picture>
+                                <p class="card-set__top-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo debitis, ipsa minima nisi tempore reiciendis amet, possimus quibusdam laboriosam impedit ratione dicta tenetur dolores reprehenderit, quasi aspernatur quo aliquid expedita..</p>
+                            </div>
+                            <div class="card-set__discription">
+                                <h2 class="card-set__title">Proyecto Prime</h2>
+                                <p class="card-set__text">Marketing</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card-set__item">
+                        <a href="" class="card-set__link">
+                            <div class="card-set__top-wrap">
+                                <picture>
+                                    <source srcset="./images/portfolio5.jpg 1x, ./images/portfolio5-2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio5-tab.jpg 1x, ./images/portfolio5-tab-2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio5-mob.jpg 1x, ./images/portfolio5-mob-2x.jpg 2x" media="(max-width: 767px)">
+                                    <img src="./images/portfolio5-mob.jpg" 
+                                        alt="cajas publicidad" 
+                                        width="450">
+                                </picture>
+                                <p class="card-set__top-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae incidunt quasi quibusdam aliquam molestias, ratione voluptas deserunt pariatur eveniet ipsam officiis illum a accusamus quaerat exercitationem. Itaque voluptates qui quis?.</p>
+                            </div>                            
+                            <div class="card-set__discription">
+                                <h2 class="card-set__title">Proyecto Cajas</h2>
+                                <p class="card-set__text">Aplicaciones</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card-set__item">
+                        <a href="" class="card-set__link">
+                            <div class="card-set__top-wrap">
+                                <picture>
+                                    <source srcset="./images/portfolio6.jpg 1x, ./images/portfolio6-2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio6-tab.jpg 1x, ./images/portfolio6-tab-2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio6-mob.jpg 1x, ./images/portfolio6-mob-2x.jpg 2x" media="(max-width: 767px)">
+                                    <img src="./images/portfolio6-mob.jpg" 
+                                        alt="Computador  con publicidad" 
+                                        width="450">
+                                </picture>
+                                <p class="card-set__top-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex corporis quod non fugiat harum dolor officiis eum cumque ipsa incidunt laboriosam suscipit nemo delectus illum maiores vel, officia possimus dolores..</p>
+                            </div>
+                            <div class="card-set__discription">
+                                <h2 class="card-set__title">La inspiración no tiene límites</h2>
+                                <p class="card-set__text">Sitio-web</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card-set__item">
+                        <a href="" class="card-set__link">
+                            <div class="card-set__top-wrap">
+                                <picture>
+                                    <source srcset="./images/portfolio7.jpg 1x, ./images/portfolio7-2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio7-tab.jpg 1x, ./images/portfolio7-tab-2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio7-mob.jpg 1x, ./images/portfolio7-mob-2x.jpg 2x" media="(max-width: 767px)">
+                                    <img src="./images/portfolio7-mob.jpg" 
+                                        alt="Revisata Diseño Blogs" 
+                                        width="450">
+                                </picture>
+                                <p class="card-set__top-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A sint doloremque deserunt optio mollitia consequuntur. Debitis ea exercitationem, dolores quod, nemo laborum eaque enim nisi deleniti molestiae facilis, itaque eos..</p>
+                            </div>
+                            <div class="card-set__discription">
+                                <h2 class="card-set__title">Edición Limitada</h2>
+                                <p class="card-set__text">Diseño</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card-set__item">
+                        <a href="" class="card-set__link">
+                            <div class="card-set__top-wrap">
+                                <picture>
+                                    <source srcset="./images/portfolio8.jpg 1x, ./images/portfolio8-2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio8-tab.jpg 1x, ./images/portfolio8-tab-2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio8-mob.jpg 1x, ./images/portfolio8-mob-2x.jpg 2x" media="(max-width: 767px)">
+                                    <img src="./images/portfolio8-mob.jpg" 
+                                        alt="Etiqueta de ropa" 
+                                        width="450">
+                                </picture>
+                                <p class="card-set__top-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eaque commodi, mollitia rerum aliquam quas reiciendis amet debitis totam nam alias quae voluptatem. Odit rem quod debitis aliquid excepturi commodi..</p>
+                            </div>
+                            <div class="card-set__discription">
+                                <h2 class="card-set__title">Proyecto LAB</h2>
+                                <p class="card-set__text">Marketing</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card-set__item">
+                        <a href="" class="card-set__link">
+                            <div class="card-set__top-wrap">
+                                <picture>
+                                    <source srcset="./images/portfolio9.jpg 1x, ./images/portfolio9-2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio9-tab.jpg 1x, ./images/portfolio9-tab-2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio9-mob.jpg 1x, ./images/portfolio9-mob-2x.jpg 2x" media="(max-width: 767px)">
+                                    <img src="./images/portfolio9-mob.jpg" 
+                                        alt="Computador de negocios" 
+                                        width="450">
+                                </picture>
+                                <p class="card-set__top-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit dignissimos aut, iusto provident reprehenderit aspernatur doloribus. Ipsum odit atque omnis nihil repudiandae mollitia perferendis eum magnam, iure facere earum nam?.</p>
+                            </div>
+                            <div class="card-set__discription">
+                                <h2 class="card-set__title">Negocio en Crecimento</h2>
+                                <p class="card-set__text">Aplicaciones</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__wrap">
+            <div class="tab-wrap">
+                <div class="footer-contacts">
+                <a href="./" class="logo footer__logo"><span class="logo__accent">Web</span>Studio</a>
+                <address class="footer-contacts__list">
+                    Calz. Ticomán 500, Ciudad de México, CDMX, México
+                    <a href="mailto:info@devstudio.com" class="footer-contacts__link">info@devstudio.com</a>
+                    <a href="tel:+380961111111" class="footer-contacts__link">+52 55 5529 60001</a>
+                </address>
+                </div>
+                <div class="footer-socials">
+                <h3 class="footer-socials__title">ENCUENTRENOS EN</h3>
+                <ul class="footer-socials__list list">
+                    <li class="footer-socials__item">
+                        <a href="" class="footer-socials__link" aria-label="Enlace a Instagram" target="_blank" rel="noopener noreferrer">
+                            <svg class="footer-socials__icon">
+                                <use href="./images/symbol-defs.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="footer-socials__item">
+                        <a href="" class="footer-socials__link" aria-label="Enlace a Twitter" target="_blank" rel="noopener noreferrer">
+                            <svg class="footer-socials__icon">
+                                <use href="./images/symbol-defs.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="footer-socials__item">
+                        <a href="" class="footer-socials__link" aria-label="Enlace a Facebook" target="_blank" rel="noopener noreferrer">
+                            <svg class="footer-socials__icon">
+                                <use href="./images/symbol-defs.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    
+                    <li class="footer-socials__item">
+                        <a href="" class="footer-socials__link" aria-label="Enlace a LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <svg class="footer-socials__icon">
+                                <use href="./images/symbol-defs.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            
+            <div class="footer-send">
+                <p class="footer-send__title">SUSCRÍBASE al boletín informativo </p>
+                <form class="footer-send__form">
+                    <input type="email" class="footer-send__input" name="user-email" placeholder="Correo electronico">
+                    <button type="submit" class="button footer-send__btn">Suscríbase
+                        <svg class="footer-send__icon" width="24" height="24">
+                            <use href="./images/symbol-defs.svg#send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/menu.js"></script>
+</body>
+</html>
+
